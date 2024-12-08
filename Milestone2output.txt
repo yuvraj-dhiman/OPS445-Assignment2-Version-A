@@ -1,0 +1,38 @@
+yuvraj-dhiman@yuvrajdhiman-virtual-machine:~/ops445/assignment2$ ./assignment2.py -h
+usage: assignment2.py [-h] [-l LENGTH] [-H] [program]
+
+Memory Visualiser -- See Memory Usage Report with bar charts
+
+positional arguments:
+  program               If a program is specified, show memory use of all associated processes.
+
+options:
+  -h, --help            show this help message and exit
+  -l LENGTH, --length LENGTH
+                        Specify the length of the graph. Default is 20.
+  -H, --human-readable  Prints sizes in human-readable format.
+
+Copyright 2023
+yuvraj-dhiman@yuvrajdhiman-virtual-machine:~/ops445/assignment2$ python3 ./checkA2.py -f -v TestParseArgs
+test_argparse_help (__main__.TestParseArgs.test_argparse_help)
+assignment2.py -h returns the required options ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.054s
+
+OK
+yuvraj-dhiman@yuvrajdhiman-virtual-machine:~/ops445/assignment2$ python3 ./checkA2.py -f -v TestPidList
+test_pids (__main__.TestPidList.test_pids) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+yuvraj-dhiman@yuvrajdhiman-virtual-machine:~/ops445/assignment2$ python3 ./checkA2.py -f -v TestPidMem
+test_rss_total (__main__.TestPidMem.test_rss_total) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+
